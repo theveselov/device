@@ -8,8 +8,12 @@
       <header class="main-header">
         <a class="main-header-logo" href="index.html">Device</a>
         <ul class="header-ui">
-        <li><span class="search-box">
-          <!-- Здесь будет форма --></span></li>
+        <li>
+            <form class="searchbox-form" action="https://echo.htmlacademy.ru" method="post">
+                <input type="search" class="searchbox-main" placeholder="Поиск по сайту" name="searchbox-main">
+                <button type="submit" class="button-search"><img src="#" alt="Поиск"></button>
+                
+            </form></li>
         <li><a class="main-login" href="#">Войти</a></li>
         <li><a class="main-compare" href="#">Сравнить</a></li>
         <li><a class="main-cart" href="#">Корзина</a></li>
@@ -97,6 +101,9 @@
                 </tr>
                 </table>
             </div>
+            <input type="radio" name="radio-slide" value="slide1" class="radio-slide" checked>
+            <input type="radio" name="radio-slide" value="slide2" class="radio-slide">
+            <input type="radio" name="radio-slide" value="slide3" class="radio-slide">
         </div>
         
         <section class="popular-items">
@@ -112,9 +119,9 @@
         
         <section class="services slides">
           <ul>
-            <li><a class="button current" href="#">Доставка</a></li>
-            <li><a class="button" href="#">Гарантия</a></li>
-            <li><a class="button" href="#">Кредит</a></li>
+            <li><button type="button" class="button current" href="#">Доставка</button></li>
+            <li><button type="button" class="button" href="#">Гарантия</button></li>
+            <li><button type="button" class="button" href="#">Кредит</button></li>
           </ul>
           <div class="delivery">
             <h2>Доставка</h2>
@@ -195,16 +202,30 @@
       
       <section class="modal modal-map">
         <h2 class="visually-hidden">Карта</h2>
-        <span class="modal-close">x</span>
+        <p>
+          <img src="img/map-big.jpg" width="960px" height="559px" alt="г. Москва, ул. Строителей, 15">
+        </p>
+        <button class="modal-close" type="button">Закрыть</button>
       </section>
       
       <section class="modal modal-write-us">
         <h2 class="visually-hidden">Напишите нам</h2>
-        <p>Ваше имя:</p>
-        <p>Ваш e-mail:</p>
-        <p>Текст письма</p>
-        <!-- Здесь будет форма -->
-        <span class="modal-close">x</span>
+        <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="write-item">
+                <label for="username">Ваше имя:</label>
+                <input id="username" type="text" name="username" value="" placeholder="Имя Фамилия">
+            </p>
+            <p>
+                <label for="user-email">Ваш e-mail:</label> 
+                <input id="user-email" type="email" name="user-email" value="" placeholder="email@example.com">
+            </p>
+            <p>
+                <label for="letter-text">Текст письма</label>
+                <input id="letter-text" type="text" name="letter-text" value="" placeholder="В свободной форме">
+            </p>
+            <button class="button" type="submit">Отправить</button> 
+        </form>
+        <button type="button" class="modal-close">Закрыть</button>
       </section>
   </body>
 </html>

@@ -3,14 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
       <header class="main-header">
-        <a class="main-header-logo" href="index.html">Device</a>
+        <a class="main-header-logo" href="index.html">DEVICE</a>
         <ul class="header-ui">
-        <li><span class="search-box">
-                <!-- Здесь будет форма -->
-            </span>
+        <li>
+            <form class="searchbox-form" action="https://echo.htmlacademy.ru" method="post">
+                <input type="search" class="searchbox-main" placeholder="Поиск по сайту" name="searchbox-main">
+                <button type="submit" class="button-search">Найти</button>
+            </form>
         </li>
         <li><a class="main-login" href="#">Войти</a></li>
         <li><a class="main-compare" href="#">Сравнить</a></li>
@@ -42,27 +47,27 @@
         <ul class="breadcrumbs">
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Каталог товаров</a></li>
-          <li class="breadcrumbs-current">Моноподы для селфи</li>
+          <li class="breadcrumbs-current"><a href="#">Моноподы для селфи</a></li>
         </ul>
         <section class="filters-left">
-          <h2 class="visually-hidden">Фильтр товаров</h2>
+          <h2>Фильтр</h2>
             <form class="filers-left" method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
                     <legend>Стоимость</legend>
-                    <input type="range" class="range-filter" min="0" max="10000" step="1000" value="5000">
+                    <input type="range" class="range-filter" min="0" max="10000" step="1000" value="5000"> <!-- Позже заменить на div -->
                 </fieldset>
                 <fieldset>
                     <legend>Цвет</legend>
                     <ul>
-                        <li><input id="black-check" class="checkbox-filter input-filter visually-hidden" type="checkbox" name="black" checked>
+                        <li><input id="black-check" class="checkbox-filter input-filter" type="checkbox" name="black" checked>
                             <label for="black-check">Чёрный</label></li>
-                        <li><input id="white-check" class="checkbox-filter input-filter visually-hidden" type="checkbox" name="white">
+                        <li><input id="white-check" class="checkbox-filter input-filter" type="checkbox" name="white">
                             <label for="white-check">Белый</label></li>
-                        <li><input id="blue-check" class="checkbox-filter input-filter visually-hidden" type="checkbox" name="blue" checked>
+                        <li><input id="blue-check" class="checkbox-filter input-filter" type="checkbox" name="blue" checked>
                             <label for="blue-check">Синий</label></li>
-                        <li><input id="red-check" class="checkbox-filter input-filter visually-hidden" type="checkbox" name="red" checked>
+                        <li><input id="red-check" class="checkbox-filter input-filter" type="checkbox" name="red" checked>
                             <label for="red-check">Красный</label></li>
-                        <li><input id="pink-check" class="checkbox-filter input-filter visually-hidden" type="checkbox" name="pink">
+                        <li><input id="pink-check" class="checkbox-filter input-filter" type="checkbox" name="pink">
                             <label for="pink-check">Розовый</label></li>
                     </ul>
                 </fieldset>
@@ -70,11 +75,11 @@
                     <legend>Bluetooth</legend>
                     <ul>
                         <li class="filter-option">
-                            <input type="radio" id="bluetooth-yes" class="visually-hidden input-filter radio-filter" name="product-group" value="bluetooth-yes">
+                            <input type="radio" id="bluetooth-yes" class="input-filter radio-filter" name="product-group" value="bluetooth-yes">
                             <label for="bluetooth-yes">Есть</label>
                         </li>
                         <li class="filter-option">
-                            <input type="radio" id="bluetooth-no" class="visually-hidden input-filter radio-filter" name="product-group" value="bluetooth-no">
+                            <input type="radio" id="bluetooth-no" class="input-filter radio-filter" name="product-group" value="bluetooth-no">
                             <label for="bluetooth-no">Нет</label>
                         </li>
                     </ul>
@@ -84,8 +89,14 @@
         </section>
           
         <section class="filters-top">
-          <h2 class="visually-hidden">Сортировка товаров</h2>
-            <!-- Здесь будет форма -->
+          <h2>Сортировка</h2>
+            <ul>
+                <li><a href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По популярности</a></li>
+            </ul>
+            <a href="#" class="sort-items"><img src="#" alt="По возрастанию"></a>
+            <a href="#" class="sort-items"><img src="#" alt="По убыванию"></a>
         </section>
           
         <section class="catalog">
@@ -105,7 +116,7 @@
               </span>
             </li>
             <li class="catalog-item">
-              <h3><a href="#">Профессиональная<br>
+              <h3 class="item-title"><a href="#">Профессиональная<br>
                               селфи-палка</a>
               </h3>
               <p>
@@ -147,17 +158,17 @@
             </li>
           </ul>
           <ul class="pagination-list">
-            <li class="pagination-item"><a href="#">Назад</a></li>
+            <li class="pagination-item pagination-back"><a href="#">Назад</a></li>
             <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item"><a href="#">Вперед</a></li>
+            <li class="pagination-item pagination-next"><a href="#">Вперед</a></li>
           </ul>
         </section>
       </main>
       
       <footer class="main-footer">
-        <h2 class="logo">Device</h2>
+        <h2 class="logo">DEVICE</h2>
         <ul class="footer-ui">
             <li><a class="footer-login" href="#">Валентин Петухов</a></li>
             <li><a class="footer-exit" href="#">Выйти</a></li>

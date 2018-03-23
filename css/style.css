@@ -1,0 +1,384 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-ExtraBold.woff");
+}
+
+@font-face {
+    font-family: "Gilroy Light";
+    src: url("../fonts/Gilroy-Light.woff");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    color: #464646;
+    
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-ui {
+    color: #000000;
+    background-color: #f7e296;
+    list-style: none;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.header-nav-main {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    list-style: none;
+    background-color: #f7e296;
+}
+
+.header-catalog-items,
+.header-shipping,
+.header-guarantee,
+.header-contacts {
+    text-transform: uppercase;
+}
+
+.catalog-menu {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 36px;
+    list-style: none;
+}
+
+.header-ui a,
+.header-nav-main a,
+.catalog-menu a {
+    color: #000000;
+}
+
+.main-header-logo {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 48px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.pagination-item:hover,
+.breadcrumbs a:hover
+.filters-top a:hover,
+.footer-menu a:hover,
+.logo:hover,
+.searchbox-form input:hover,
+.header-nav a:hover,
+.header-ui a:hover,
+.main-header-logo:hover {
+    opacity: 0.6;
+}
+
+.pagination-item,
+.footer-menu a:active,
+.footer-ui a:active,
+.logo:active,
+.header-nav a:active,
+.header-ui a:active,
+.main-header-logo:active {
+    opacity: 0.3;
+}
+
+.slide-1 h2,
+.slide-2 h2,
+.slide-3 h2 {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 47px;
+    line-height: 56px;
+    color: #000000;
+    
+}
+
+.slide-1 p,
+.slide-2 p,
+.slide-3 p {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.spec-value {
+    font-family: "Gilroy Light", Arial, sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.spec {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.button {
+    font: inherit;
+    
+    text-align: center;
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+    vertical-align: middle;
+    text-transform: uppercase;
+    
+    background-color: #f0c52e;
+    border: none;
+}
+
+.button:active {
+    background-color: #000000;
+    color: #f7e184;
+}
+
+.write-us-form input {
+    font: inherit;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.write-us-form input:hover {
+    background-color: #ebebeb;
+}
+
+.write-us-form input:focus {
+    background-color: transparent;
+    border: 3px solid #f7e296;
+    color: #464646;
+}
+
+.searchbox-form input {
+    opacity: 0.3;
+    background-color: transparent;
+}
+
+.pagination-item:active,
+.pagination-item-current,
+.to-compare,
+.filters-top a:active,
+.footer-ui a:hover,
+.searchbox-form input:focus {
+    opacity: 1;
+}
+
+.searchbox-form button {
+    border: 2px solid #000000;
+    background-color: transparent;
+    font: inherit;
+}
+
+.searchbox-form button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.searchbox-form button:active {
+    background-color: #000000;
+    color: #4d4d4d;
+}
+
+.yellow-button {
+    background-color: #f0c52e;
+    color: #000000;
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.yellow-button:active {
+    color: #a88a20;
+}
+
+.main-footer {
+    background-color: #464646;
+}
+
+.logo {
+    font-family: "Gilroy", Arial, sans-serif;
+    color: #ffc600;
+    font-size: 46px;
+    line-height: 48px;
+}
+
+.footer-ui a {
+    color: #ffffff;
+    opacity: 0.7;
+    list-style: none;
+}
+
+.footer-menu a {
+    color: #ffffff;
+    list-style: none;
+}
+
+.popular-menu {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    list-style: none;
+}
+
+.current {
+    background-color: #000000;
+    color: #e7d27b;
+}
+
+.delivery h2,
+.warranty h2,
+.credit h2 {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 47px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.delivery p,
+.warranty p,
+.credit p {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.info h2,
+.contacts h2 {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 47px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.filters-left h2 {
+    background-color: #dbdbdb;
+}
+
+.filters-left {
+    background-color: #efefef;
+}
+
+.filters-left li {
+    list-style: none;
+}
+
+.filters-top {
+    background-color: #ebebeb;
+}
+
+.filters-top a {
+    color: #000000;
+    opacity: 0.3;
+}
+
+.filters-top li {
+    list-style: none;
+}
+
+.catalog-item {
+    background-color: #eeeeee;
+}
+
+.filters-left fieldset {
+    border: none;
+}
+
+.breadcrumbs a{
+    font-size: 14px;
+    line-height: 24px;
+    opacity: 0.3;
+    color: #000000;
+}
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs a:active {
+    opacity: 0.1;
+}
+
+.sort-items {
+    opacity: 0.2;
+}
+
+.sort-items:hover {
+    opacity: 0.4;
+}
+
+.radio-filter:disabled + label {
+    color: #a6a6a6;
+}
+
+.checkbox-filter:disabled + label {
+    color: #a6a6a6;
+}
+
+.catalog-item h3 {
+    color: #000000;
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.catalog-item {
+    list-style: none;
+}
+
+.catalog-item b {
+    font-family: "Gilroy Light", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.to-compare {
+    font-family: "Open Sans", Arial, sans-serif
+    color: #000000;
+    opacity: 0.5;
+}
+
+.to-compare:active {
+    opacity: 0.2;
+}
+
+.pagination-list {
+    list-style: none;
+    background-color: #ebebeb;
+}
+
+.pagination-list a {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.pagination-back:hover,
+.pagination-next:hover {
+    background-color: #d9d9d9;
+}
+.pagination-back:active,
+.pagination-next:active {
+   opacity: 0.3;
+   background-color: #d9d9d9;
+}
+
+.page-title {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 47px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.footer-contacts {
+    font-size: 15px;
+    line-height: 30px;
+    color: #ffffff;
+}

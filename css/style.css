@@ -1148,12 +1148,26 @@ a.user-menu-logout{
   background-position: center right 16px;
 }
 
+.result-show ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 170px;
+  width: 360px;
+  height: 380px;
+}
+
 .result-show{
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-top: 69px;
   margin-left: 71px;
+  width: 760px;
 }
 .result-show li:nth-child(odd){
   margin-right: 40px;
@@ -1356,6 +1370,9 @@ span.price-min{
     opacity: 1;
 }
 
+.result-show li {
+    width: 360px;
+}
 .result-show-description{
   justify-content: space-between;
   line-height: 1.25;
@@ -1437,7 +1454,7 @@ span.price-min{
   padding: 0;
   padding-top: 25px;
   padding-bottom: 25px;
-
+  width: 760px;
   list-style: none;
 
   background-color: #ebebeb;

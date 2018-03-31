@@ -2,16 +2,18 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
     <title>Device</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <div class="container">
       <header class="main-header">
-        <a class="header-logo" href="#">DEVICE</a>
+        <a class="header-logo">
+          <img src="img/logo-header.png" width="164px" height="36px" alt="Device">
+        </a>
         <nav class="main-nav">
           <ul class="user-menu pos-flex">
             <li>
@@ -230,10 +232,10 @@
           <section class="vendors">
             <h2 class="visually-hidden">Основные поставщики</h2>
             <ul class="vendors-list pos-flex">
-              <li><a href="#"><img src="img/dji-logo.jpg" alt="DJI"></a></li>
-              <li><a href="#"><img src="img/spgadgets-logo.jpg" alt="SP-Gadgets"></a></li>
-              <li><a href="#"><img src="img/gopro-logo.jpg" alt="GoPro"></a></li>
-              <li><a href="#"><img src="img/vive-logo.jpg" alt="Vive"></a></li>
+              <li class="brands-logo brands-dji"><a href="#"><img src="img/dji-logo.jpg" alt="DJI"></a></li>
+              <li class="brands-logo brands-spgadgets"><a href="#"><img src="img/spgadgets-logo.jpg" alt="SP-Gadgets"></a></li>
+              <li class="brands-logo brands-gopro"><a href="#"><img src="img/gopro-logo.jpg" alt="GoPro"></a></li>
+              <li class="brands-logo brands-vive"><a href="#"><img src="img/vive-logo.jpg" alt="Vive"></a></li>
             </ul>
           </section>
         </div>
@@ -302,7 +304,9 @@
         <footer class="main-footer pos-flex">
 
           <div class="main-footer-left">
-            <a href="#" class="footer-logo">DEVICE</a>
+            <a class="footer-logo">
+              <img src="img/logo-footer.png" width="163px" height="36px" alt="Device">
+            </a>
             <p class="footer-address">г. Москва, ул. Строителей, 15</p>
           </div>
 

@@ -2,16 +2,18 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
     <title>Device</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
   <div class="container">
       <header class="main-header-catalog">
-        <a class="header-logo" href="index.html">DEVICE</a>
+        <a class="header-logo" href="index.html">
+          <img src="img/logo-header.png" width="164px" height="36px" alt="Device">
+        </a>
         <nav class="main-nav">
           <ul class="user-menu pos-flex">
             <li>
@@ -112,23 +114,23 @@
               <fieldset class="filter-color">
                 <span>Цвет</span>
                 <div>
-                  <input type="checkbox" name="color" id="color-black" value="black" class="visually-hidden" checked>
+                  <input type="checkbox" name="color" id="color-black" value="black" class="visually-hidden filter-input" checked>
                   <label for="color-black">Черный</label>
                 </div>
                 <div>
-                  <input type="checkbox" name="color" id="color-white" value="white" class="visually-hidden">
+                  <input type="checkbox" name="color" id="color-white" value="white" class="visually-hidden filter-input">
                   <label for="color-white">Белый</label>
                 </div>
                 <div>
-                  <input type="checkbox" name="color" id="color-blue" value="blue" class="visually-hidden" checked>
+                  <input type="checkbox" name="color" id="color-blue" value="blue" class="visually-hidden filter-input" checked>
                   <label for="color-blue">Синий</label>
                 </div>
                 <div>
-                  <input type="checkbox" name="color" id="color-red" value="red" class="visually-hidden" checked>
+                  <input type="checkbox" name="color" id="color-red" value="red" class="visually-hidden filter-input" checked>
                   <label for="color-red">Красный</label>
                 </div>
                 <div>
-                  <input type="checkbox" name="color" id="color-pink" value="pink" class="visually-hidden">
+                  <input type="checkbox" name="color" id="color-pink" value="pink" class="visually-hidden filter-input">
                   <label for="color-pink">Розовый</label>
                 </div>
               </fieldset>
@@ -136,11 +138,11 @@
               <fieldset class="filter-bluetooth">
                 <span>Bluetooth</span>
                 <div>
-                  <input type="radio" name="bluetooth" id="bluetooth-yes" value="1" class="visually-hidden" checked>
+                  <input type="radio" name="bluetooth" id="bluetooth-yes" value="1" class="visually-hidden filter-input" checked >
                   <label for="bluetooth-yes">Есть</label>
                 </div>
                 <div>
-                  <input type="radio" name="bluetooth" id="bluetooth-no" value="0" class="visually-hidden">
+                  <input type="radio" name="bluetooth" id="bluetooth-no" value="0" class="visually-hidden filter-input">
                   <label for="bluetooth-no">Нет</label>
                 </div>
               </fieldset>
@@ -157,7 +159,7 @@
                   <img src="img/product-1.jpg" alt="Любительская селфи-палка">
                   <div class="result-show-buy visually-hidden">
                     <a class="btn-about">В корзину</a>
-                    <a href="#">Добавить в сравнению</a>
+                    <a class="compare-items" href="#">Добавить в сравнению</a>
                   </div>
                 </div>
                 <div class="result-show-description pos-flex">
@@ -170,7 +172,7 @@
                   <img src="img/product-2.jpg" alt="Профессиональная селфи-палка">
                   <div class="result-show-buy visually-hidden">
                     <a class="btn-about">В корзину</a>
-                    <a href="#">Добавить в сравнению</a>
+                    <a class="compare-items" href="#">Добавить в сравнению</a>
                   </div>
                 </div>
                 <div class="result-show-description pos-flex">
@@ -183,7 +185,7 @@
                   <img src="img/product-3.jpg" alt="Непотопляемая селфи-палка">
                   <div class="result-show-buy visually-hidden">
                     <a class="btn-about">В корзину</a>
-                    <a href="#">Добавить в сравнению</a>
+                    <a class="compare-items" href="#">Добавить в сравнению</a>
                   </div>
                 </div>
                 <div class="result-show-description pos-flex">
@@ -196,7 +198,7 @@
                   <img src="img/product-4.jpg" alt="Селфи-палка 'Следуй за мной'">
                   <div class="result-show-buy visually-hidden">
                     <a class="btn-about">В корзину</a>
-                    <a href="#">Добавить в сравнению</a>
+                    <a class="compare-items" href="#">Добавить в сравнению</a>
                   </div>
                 </div>
                 <div class="result-show-description pos-flex">
@@ -206,15 +208,17 @@
               </li>
             </ul>
 
-            <nav class="filter-result-pagination pos-flex">
-              <b><a href="#">назад</a></b>
-              <ul class="filter-result-pagination-pages pos-flex">
-                <li><a class="filter-result-pagination-active">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-              </ul>
-              <b><a href="#">вперед</a></b>
-            </nav>
+            <ul class="pagination">
+                <li class="pagination-item pagination-prev"><a>Назад</a></li>
+                <li class="pagination-item">
+                  <ul class="pagination-numbers">
+                    <li class="pagination-current"><a>1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                  </ul>
+                </li>
+                <li class="pagination-item pagination-next"><a href="#">Вперед</a></li>
+            </ul>
           </section>
         </div>
       </div>
@@ -228,7 +232,9 @@
         <footer class="main-footer pos-flex">
 
           <div class="main-footer-left">
-            <a href="index.html" class="footer-logo">DEVICE</a>
+            <a class="footer-logo" href="index.html">
+              <img src="img/logo-footer.png" width="163px" height="36px" alt="Device">
+            </a>
             <p class="footer-address">г. Москва, ул. Строителей, 15</p>
           </div>
 
@@ -252,7 +258,7 @@
               <li><a href="#"><span>Корзина</span></a></li>
             </ul>
             <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
-            <a href="#" class="made-by">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="made-by">HTML Academy</a>
           </div>
 
         </footer>

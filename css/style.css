@@ -876,7 +876,7 @@ input#feature-content-3:checked ~ nav label.feature-content-3-btn{
 }
 
 .main-footer-left{
-  margin-top: 60px;
+  margin-top: 75px;
   margin-right: 125px;
 }
 .main-footer-left:after{
@@ -906,6 +906,7 @@ input#feature-content-3:checked ~ nav label.feature-content-3-btn{
 }
 
 .footer-features{
+  padding-top: 13px;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
@@ -954,7 +955,7 @@ input#feature-content-3:checked ~ nav label.feature-content-3-btn{
   font-family: OpenSans, Arial, sans-serif;
   font-weight: 300;
   margin-left: auto;
-  margin-top: 48px;
+  margin-top: 63px;
   text-align: right;
 }
 .main-footer-right ul{
@@ -1450,17 +1451,21 @@ span.price-min{
   margin: 0;
   margin-top: -10px;
   margin-left: 67px;
-  margin-bottom: 75px;
+  margin-bottom: 70px;
   padding: 0;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 22px;
+  padding-bottom: 13px;
+  padding-left: 5px;
   width: 760px;
   list-style: none;
 
   background-color: #ebebeb;
 }
 
+
 .pagination-item a {
+  padding-left: 25px;
+  padding-right: 25px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   letter-spacing: 3.2px;
@@ -1477,13 +1482,14 @@ span.price-min{
 }
 
 .pagination-current a {
+  
   color: #000000;
 }
 
 .pagination-prev a,
 .pagination-next a {
   padding-left: 30px;
-  padding-right: 30px;
+  padding-right: 25px;
   padding-top: 25px;
   padding-bottom: 25px;
 
@@ -1514,13 +1520,13 @@ span.price-min{
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: -10px;
 
   list-style: none;
 }
 
 .pagination-numbers li {
-  margin-right: 28px;
+  margin-right: 5px;
 }
 
 .pagination-numbers li:last-child {
